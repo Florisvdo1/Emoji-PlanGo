@@ -1,25 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emoji Dagplanner</title>
+  <title>Emoji Planner</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
   <header class="app-header">
     <div class="time-container">
-      <span class="time-icon">🌙</span>
-      <span id="current-time">4:42:13 AM</span>
+      <span class="time-icon">🌤</span>
+      <span id="current-time">00:00:00</span>
     </div>
     <h1 class="app-title">Emoji Dagplanner</h1>
-    <button id="toggle-format" class="format-toggle-btn">Switch Format</button>
+    <button id="toggle-clock-format" class="format-toggle-btn">Switch Format</button>
   </header>
-
-  <!-- Main Content -->
   <main>
-    <!-- Time Slots Section -->
     <section class="time-slots">
       <div class="slot" id="morning-slot">
         <h2>Morning</h2>
@@ -40,13 +37,9 @@
         </div>
       </div>
     </section>
-
-    <!-- Homework Button -->
     <button class="homework-btn">Clear Planner</button>
-
-    <!-- Emoji Picker -->
     <section class="emoji-picker">
-      <input type="text" id="emoji-search" placeholder="Search emojis (e.g., 'happy face')">
+      <input type="text" id="emoji-search" placeholder="Search emojis...">
       <div class="emoji-categories">
         <div class="category-nav">
           <button class="category-btn" data-category="activities">Activities</button>
@@ -55,34 +48,31 @@
         </div>
         <div id="emoji-list">
           <div class="emoji-category" data-category="activities">
-            <span class="emoji" draggable="true">🎨</span>
-            <span class="emoji" draggable="true">🎭</span>
-            <span class="emoji" draggable="true">🎪</span>
-            <span class="emoji" draggable="true">🎤</span>
-            <span class="emoji" draggable="true">📖</span>
+            <span class="emoji" draggable="true" aria-label="paint palette">🎨</span>
+            <span class="emoji" draggable="true" aria-label="theater masks">🎭</span>
+            <span class="emoji" draggable="true" aria-label="circus tent">🎪</span>
           </div>
           <div class="emoji-category" data-category="food" style="display: none;">
-            <span class="emoji" draggable="true">🍕</span>
-            <span class="emoji" draggable="true">🍔</span>
-            <span class="emoji" draggable="true">🍎</span>
+            <span class="emoji" draggable="true" aria-label="pizza">🍕</span>
+            <span class="emoji" draggable="true" aria-label="hamburger">🍔</span>
+            <span class="emoji" draggable="true" aria-label="apple">🍎</span>
           </div>
           <div class="emoji-category" data-category="weather" style="display: none;">
-            <span class="emoji" draggable="true">☀️</span>
-            <span class="emoji" draggable="true">☁️</span>
-            <span class="emoji" draggable="true">❄️</span>
+            <span class="emoji" draggable="true" aria-label="sun">☀️</span>
+            <span class="emoji" draggable="true" aria-label="cloud">☁️</span>
+            <span class="emoji" draggable="true" aria-label="snowflake">❄️</span>
           </div>
         </div>
       </div>
     </section>
   </main>
-
-  <!-- Footer -->
+  <div class="background-animation">
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+  </div>
   <footer class="app-footer">
-    <button class="nav-btn">+</button>
-    <button class="nav-btn">&#x25B2;</button>
+    <p>© 2024 Emoji Planner. All Rights Reserved.</p>
   </footer>
-
-  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>

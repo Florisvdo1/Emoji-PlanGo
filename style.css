@@ -5,4 +5,12 @@ body {
   padding: 0;
   background-color: #E5F6FD;
 }
-/* Add more styling for header, main content, animations, etc. */
+.app-header {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+/* Additional styling for layout and colors */

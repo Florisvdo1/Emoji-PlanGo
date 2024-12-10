@@ -1,0 +1,62 @@
+/* Global Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #A9DFF6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+/* Header */
+.app-header {
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+}
+
+.format-toggle-btn {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  background: #FF6B6B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Time Slots */
+.slot {
+  padding: 10px;
+  background: white;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Emoji Picker */
+.category-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.category-btn {
+  padding: 5px;
+  margin: 0 5px;
+  background: #5DB075;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.emoji {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
